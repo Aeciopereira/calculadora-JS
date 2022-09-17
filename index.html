@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <body>
+<script>
+   //uma calculadora no pronpt de comando ela entendera que sera uma string e é necessario chamar uma função "parseInt"
+   var numeroInicial =  prompt('informe um numero');
+      var sinal = prompt('informe o sinal de sua operação...');
+
+            while (sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*') {
+              alert('por favor informe um sinal válido !');
+              sinal = prompt('informe o sinal da sua operação ...');
+             }  
+                 var numeroFinal = prompt ('informe o numero final');
+
+
+                 //vendo que este codigo fez a soma de strings vamos converter para numeros usando o "parseInt"
+                  /////
+                  numeroInicial = parseInt (numeroInicial);
+                  numeroFinal   = parseInt (numeroFinal);
+                                                          
+
+                  /////
+
+
+      var resultadoFinal = 0;
+          if(sinal == '+'){
+                      resultadoFinal = numeroInicial + numeroFinal;
+          }else if(sinal == '-'){
+                        resultadoFinal = numeroInicial - numeroFinal;
+          }else if(sinal == '/'){
+                         resultadoFinal = numeroInicial / numeroFinal;
+          }else if (sinal == '*'){
+                           resultadoFinal = numeroInicial * numeroFinal;
+          }
+      alert('o resultado final é : ' + resultadoFinal);
+       
+</script>
+ </body>
+</html> 
